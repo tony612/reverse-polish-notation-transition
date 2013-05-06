@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class program2 {
+public class postfix {
   private static final String[] OPERATORS = new String[] {"+", "-", "*", "/"};
   private static final int NUM_OPERANDS = 2;
   private static Stack<String> stack = new Stack<String>();
@@ -30,7 +30,7 @@ public class program2 {
   private static String calculate(String leftStr, String rightStr, String operator) {
     int left = Integer.parseInt(leftStr);
     int right = Integer.parseInt(rightStr);
-    int result = null;
+    int result = 0;
     switch (Arrays.asList(OPERATORS).indexOf(operator)) {
       case 0:
         result = left + right;
@@ -44,6 +44,8 @@ public class program2 {
       case 3:
         result = left / right;
         break;
+      default:
+        return "";
     }
     return String.valueOf(result);
   }
@@ -135,8 +137,8 @@ public class program2 {
     }
     List preList = preOrder(top);
     List inList = inOrder(top);
-    System.out.println("Pre-fix: " + listToString(preList));
-    System.out.println("In-fix: " + listToString(inList));
+    System.out.println("Pre-fix : " + listToString(preList));
+    System.out.println("In-fix  : " + listToString(inList));
     System.out.println("Post-fix: " + args[0]);
     System.out.println("Calculating result: " + result);
   }
