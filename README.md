@@ -4,7 +4,7 @@ http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
 ## What I do
 
-I use the Postfix algorithm in the wiki to get the result of the expression. And generate the tree based on the algorithm. Then I get the [Prefix](http://en.wikipedia.org/wiki/Polish_notation) & [Postfix](http://en.wikipedia.org/wiki/Infix_notation) express.
+I use the Postfix algorithm in the wiki to get the result of the expression. And generate the tree based on the algorithm. Then I get the [Prefix](http://en.wikipedia.org/wiki/Polish_notation) & [Postfix](http://en.wikipedia.org/wiki/Infix_notation) expression.
 
 ## Usage
 
